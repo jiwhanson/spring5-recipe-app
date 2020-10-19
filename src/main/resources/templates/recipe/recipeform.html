@@ -19,7 +19,7 @@
 <!--/*@thymesVar id="recipe" type="guru.springframework.domain.Recipe"*/-->
 <div class="container-fluid" style="margin-top: 20px">
     <div class="row">
-        <div class="col-md-6 offset-md-3-3">
+        <div class="col-md-6 offset-md-3">
             <form  th:object="${recipe}" th:action="@{/recipe/}"  method="post">
                 <input type="hidden" th:field="*{id}"/>
                 <div class="panel-group">
@@ -91,7 +91,7 @@
                         <div class="card-header bg-primary text-light">
                             <div class="row">
                                 <div class="col-md-11">
-                                    <h1 class="panel-title">Ingredients</h1>
+                                    <h1 class="card-title">Ingredients</h1>
                                 </div>
                                 <div class="col-md-1">
                                     <a class="btn btn-default" href="#" role="button">Edit</a>
